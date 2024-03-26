@@ -6,7 +6,7 @@
   <link href="https://wangjplancelote.github.io/atom.xml" rel="self"/>
   
   <link href="https://wangjplancelote.github.io/"/>
-  <updated>2022-12-09T09:37:11.842Z</updated>
+  <updated>2024-03-26T07:13:35.915Z</updated>
   <id>https://wangjplancelote.github.io/</id>
   
   <author>
@@ -17,20 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>区块链钱包</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/wallet/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/wallet/</id>
-    <published>2022-12-09T09:37:11.842Z</published>
-    <updated>2022-12-09T09:37:11.842Z</updated>
+    <title>Defi(去中心化金融)</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/Defi/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/Defi/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
-    <content type="html"><![CDATA[<font face="微软雅黑" size="3"><h2 id="什么是区块链钱包"><a href="#什么是区块链钱包" class="headerlink" title="什么是区块链钱包"></a>什么是区块链钱包</h2><p>&emsp;区块链钱包是加密货币应用中必不可少的一部分，也是加密基础设施中最基础的一部分，区块链钱包的存在使得区块链收发资金成为可能。区块链钱包同时也是web3.0的一个重要入口，事实上，<strong>web3的绝大多数应用，必须要连接区块链钱包才能进一步使用</strong></p><h4 id="根据钱包的存储方式划分"><a href="#根据钱包的存储方式划分" class="headerlink" title="根据钱包的存储方式划分"></a>根据钱包的存储方式划分</h4><p>&emsp;根据用户是否掌握了私钥，可分为<strong>中心化钱包</strong> 和 <strong>去中心化钱包</strong></p><blockquote><blockquote><p>存储方式是指存在哪，只有用户持有私钥且导入钱包后，私钥存在用户设备上后才叫<strong>中心化钱包</strong>，中心化钱包的数据依赖于服务商自己的账本，交易所就是一个典型的中心化钱包，在交易所内完成的交易，就是交易所在自己的账本上增加记录，这个过程，没有发生在链上。<br>&emsp;而无私钥，或者私钥存储在服务商的服务器里，则就是<strong>去中心化钱包</strong>，</p></blockquote></blockquote><h4 id="根据是否接触网络"><a href="#根据是否接触网络" class="headerlink" title="根据是否接触网络"></a>根据是否接触网络</h4><p>&emsp;钱包是否联网可分为<strong>冷钱包</strong> 和 <strong>热钱包</strong></p><blockquote><blockquote><p>常见的热钱包指的是桌面钱包: 如 <strong>比特币核心钱包</strong>、<strong>Geth</strong>, 手机钱包，<strong>imToken</strong>、<strong>TpToken</strong>等，以及网页钱包, 如 <strong>metamask</strong> ,而冷钱包指的是硬件钱包，无需联网即可使用，冷钱包外形像U盘。</p></blockquote></blockquote><h4 id="根据去中心化程度"><a href="#根据去中心化程度" class="headerlink" title="根据去中心化程度"></a>根据去中心化程度</h4><p>&emsp;可将钱包分为<strong>全节点钱包</strong>、<strong>轻节点钱包</strong>、<strong>中心化钱包</strong></p><blockquote><blockquote><p>全节点钱包：完整储存了区块链一切买卖数据的区块链钱包，一般作为官方钱包与节点客户端运用，能够追溯数字财产的来历，验证数字财产的真实性、验证区块链上的买卖是否完成等，由于全节点钱包存储的数据巨大，且数据需要和区块链同步，因此实用性依赖于具体场景。<br>轻节点钱包：没有彻底存储区块链买卖节点的数据钱包，由于数据不完整，只保留了区块链钱包的基本功能，即接入功能和买卖验证功能，轻钱包所有的功能都是为了支持交易的成功进行，市面上常见的app钱包都是轻钱包：<strong>AToken</strong>、<strong>myToken</strong>、<strong>Kcash</strong>等.</p></blockquote></blockquote><h4 id="根据是否支持多币种"><a href="#根据是否支持多币种" class="headerlink" title="根据是否支持多币种"></a>根据是否支持多币种</h4><p>&emsp;钱包是否支持多币种可分为 <strong>单币种钱包</strong> 和 <strong>多币种钱包</strong></p><blockquote><blockquote><p>单一币种钱包：只为单一区块链资产服务的钱包，也叫主链钱包，一般由项目方或社区开发。<br>多币种钱包：支持多个区块链的数字资产，<br>全币种钱包：支持所有区块链资产，目前全币种钱包很难存在，这意味该钱包需要支持所有类型区块链协议。<br>市场上的多币种钱包已成为主流。<br><strong>imToken</strong> 是依据单ETH主链的多币种钱包，仅支持以ETH协议开发的token。<br><strong>EOSToken</strong> 是以EOS主链的钱包, 仅支持EOS协议开发.</p></blockquote></blockquote><h4 id="根据私钥签名方法可分为单签名钱包和多签名钱包"><a href="#根据私钥签名方法可分为单签名钱包和多签名钱包" class="headerlink" title="根据私钥签名方法可分为单签名钱包和多签名钱包"></a>根据私钥签名方法可分为单签名钱包和多签名钱包</h4><blockquote><blockquote><p>单签名钱包，由单个私钥签名的钱包<br>多签名钱包，需要不同私钥签名进行使用的钱包，一般用于共同管理账户，<br>大多数区块链钱包App都是单签名钱包，Gnosis则是多签名钱包。</p></blockquote></blockquote><h3 id="区块链钱包的设计原理"><a href="#区块链钱包的设计原理" class="headerlink" title="区块链钱包的设计原理"></a>区块链钱包的设计原理</h3><ul><li>私钥、公钥和地址产生的方法<blockquote><p>&emsp; 1.比特币私钥其实是使用SHA-256生成的32字节（256位）的随机数，有效私钥的范围则取决于比特币使用的secp256k1 椭圆曲线数字签名标准。<br>&emsp; 2.在私钥的前面加上版本号，后面添加压缩标志和附加校验码，（所谓附加校验码，就是对私钥经过2次SHA-256运算，取两次哈希结果的前四字节），然后再对其进行Base58编码，就可以得到我们常见的WIF（Wallet import Format)格式的私钥。<br>&emsp; 3.私钥经过椭圆曲线乘法运算，可以得到公钥。公钥是椭圆曲线上的点，并具有x和y坐标。公钥有两种形式：压缩的与非压缩的。早期比特币均使用非压缩公钥，现在大部分客户端默认使用压缩公钥。<br>&emsp; 从私钥推导出公钥、再从公钥推导出公钥哈希都是单向的，也就是<strong>采用不可逆算法</strong></p></blockquote></li></ul><p><strong><em>椭圆曲线算法</em></strong></p><blockquote><blockquote><p>&emsp; 4.公钥产生后，将公钥通过SHA256哈希算法处理得到32字节的哈希值；后对得到的哈希值通过RIPEMD-160算法来得到20字节的哈希值 ——Hash160<br>&emsp; 5.把版本号[2]+Hash160组成的21字节数组进行双次SHA256哈希运算，得到的哈希值的头4个字节作为校验和，放置21字节数组的末尾。<br>&emsp; 6.对组成25位数组进行Base58编码，最后得到地址。</p></blockquote></blockquote><ul><li>使用区块链API进行远程调用<blockquote><blockquote><p>常见的一些钱包开源项目：</p></blockquote></blockquote></li><li>-<br>[<em>bitcoin</em>]</li></ul><p><strong>Bitcoin Core</strong>，官方出品<br><strong>bitcoinj</strong>，比特币协议 Java 版<br><strong>bither</strong>，简单安全的比特币钱包<br><strong>Electrum</strong>，全平台轻钱包<br><strong>bread，iOS</strong> 钱包<br><strong>Mycelium，Android</strong> 钱包<br><strong>Copay</strong>，同时支持 Bitcoin 和BitcoinCash<br><strong>bitcoin-wallet</strong>，又一款 Android 钱包<br><strong>DotNetWallet</strong>，.NET 实现的钱包<br><strong>Coinpunk</strong>，基于浏览器的钱包<br><strong>btcwallet</strong>，Go 实现的钱包<br>–<br>[<em>Ethereum/ERC20</em>]<br><strong>go-ethereum</strong>，以太坊协议 Go 版<br><strong>Mist</strong>，官方出品<br><strong>Parity</strong>，支持 Windows、Mac、PC 的钱包<br><strong>MetaMask</strong> chrome浏览器eth wallet插件<br><strong>MyEtherWallet</strong>，基于浏览器的钱包<br><strong>eth-lightwallet</strong>，轻量级 JavasSript 版本钱包<br><strong>ethaddress.org</strong>，纸质版钱包生成器<br><strong>Neureal wallet</strong>，支持 Windows、Mac、PC 的钱包</p><ul><li>钱包设计：助记词、keystore、密码<blockquote><blockquote><p>私钥一般太难记忆了，使用也不方便，所以从钱包设计的角度，就为简化操作同时不丢失安全性，就出现了助记词的方法。<br>一般情况下，助记词由一些单词组成，只要你记住这些单词，按照顺序在钱包中输入，也能打开钱包。<br>根据密钥之间是否有关联，将钱包分为 <em>nondeterministic wallet</em> 和 <em>deterministic wallet</em></p></blockquote></blockquote></li></ul><p><em>nondeterministic wallet</em>: 密钥对之间没有关联。<br><em>deterministic wallet</em>： 密钥由一个原始的种子主密钥推导而来，常见的推导方式就是树状层级推导，(hierarchical deterministic) 简称HD<br>deterministic wallet 基于BIP32标准实现，通过一个共同的种子维护多对私钥，推导私钥的过程采用不可逆哈希算法，</p><p><em><strong>生成助记词</strong></em></p><blockquote><p>规定熵的位数必须是 32 的整数倍，所以熵的长度取值位128 到 256 之间取 32 的整数倍的值，分别为 128, 160, 192, 224, 256；<br>校验和的长度为熵的长度/32 位, 所以校验和长度可为 4，5，6，7，8 位；<br>助记词库有 2048 个词，用 11 位可全部定位词库中所有的词，作为词的索引，故一个词用 11 位表示，助记词的个数可为 (熵+校验和)/11，值为 12，15，18，21，24<br>助记词规则:<br>1.生成一个长度为 128~256 位(bits)的随机序列(熵)；<br>2.取熵哈希后的前n位作为校验和(n= 熵长度/32)；<br>3.随机序列+校验和；<br>4.把步骤3得到的结果每 11位切割；<br>5.步骤4得到的每11位字节匹配词库的一个词；<br>6.步骤5得到的结果就是助记词串;<br><img src="../assets/name.png" alt="生成助记词"><br>7.助记词句子作为密码；<br>8.”mnemonic” + passphrase 作为盐；<br>9.2048 作为重复计算的次数+HMAC-SHA512 作为随机算法,最终得到BIP32 种子，512 位(64 字节)是期望得到的密钥长度；<br><img src="../assets/secret.png" alt="生成密钥"></p></blockquote><p>除了助记词之外，钱包还会设计一个密码，作为用户常用的登录方式，<br>keystore：Keystore也是私钥经过加密过后的一个文件，需要你自己设置的密码才能打开文件。这样的好处是就算keystore文件被盗，只要你额外设置的密码够长够随机，那么短时间内私钥也不会泄露，有充足的时间转移地址里面的加密货币到其他地址。Keystore会存储在使用的设备里，这样每次登陆只用输入相应密码即可。</p><p><em><strong>总结</strong></em></p><blockquote><p>钱包助记词生成了种子（Seed），种子（Seed）生成了私钥，私钥推导出公钥，公钥节选部分成了钱包地址。同时钱包提供了keystore，他也是私钥加密后的文件，可以配合正常的密码使用，便捷了用户的钱包使用</p></blockquote><p>[<em>私钥重复问题</em>]<br>私钥产生的机制就决定了会有重复的可能。</p><blockquote><p>&emsp; 私钥有32个字节，一个字节有8位，所以私钥总数是2^(8*32)=2^256个≈10^77个<br>假设宇宙有一亿个星系，<br>每个星系有一亿颗恒星，<br>每颗恒星有一亿颗人造卫星，<br>每颗人造卫星上有一亿台超级计算机，<br>每台超级计算机有一亿个CPU，<br>每个CPU每秒可以穷举一亿个私钥。<br>假设有一亿个私钥的地址上有BTC（每个地址平均0.21BTC），那么，多久可能穷举出一个有币的私钥为：<br>10^77（私钥总数）/10^8（有币私钥）/10^8（星系）/10^8（恒星）/10^8（卫星）/10^8（超级计算机）/10^8（CPU）/10^8（每秒穷举）=10^21秒。<br>10^21秒/3600秒/24小时/365天=317098亿年<br>随着时间的累积，再加上还会有其他的公链出现，如果使用同样的私钥生成地址的规则，概率再小也会有几率出现重复的情况。但是穷举法的代价已经远远超过了所获利，因此可以理解私钥是唯一的。</p></blockquote><h4 id="理解钱包的作用"><a href="#理解钱包的作用" class="headerlink" title="理解钱包的作用"></a>理解钱包的作用</h4><blockquote><p>完成一次交易之后，钱包里没有币，也没有NFT，钱包里保存的是自己的区块链地址和对这个地址的操作权限，这些我们交易得到的币、NFT、或者其他什么加密资产是被记录在了各个网络上的对应的区块链中。<br>可以说，钱包是区块链的遥控器，创建钱包时，用助记词算出私钥，私钥和公钥配对出现，公钥算出地址，地址就是你在区块链中的账号，助记词可以重新算出私钥，可重置钱包，同时钱包生成的keystore也可以解密后获得私钥，用于重置钱包。<br>私钥的作用是获得对地址的操作权限。钱包地址可以看作区块链上的一个节点。<br>发起交易，是通过私钥授权，对地址对应的数据区块进行修改。<br></font></p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
     
     
       
       
-    <summary type="html">&lt;font face=&quot;微软雅黑&quot; size=&quot;3&quot;&gt;
-
-&lt;h2 id=&quot;什么是区块链钱包&quot;&gt;&lt;a href=&quot;#什么是区块链钱包&quot; class=&quot;headerlink&quot; title=&quot;什么是区块链钱包&quot;&gt;&lt;/a&gt;什么是区块链钱包&lt;/h2&gt;&lt;p&gt;&amp;emsp;区块链钱包是加密货币应</summary>
+    <summary type="html">&lt;h2 id=&quot;什么都没留下&quot;&gt;&lt;a href=&quot;#什么都没留下&quot; class=&quot;headerlink&quot; title=&quot;什么都没留下&quot;&gt;&lt;/a&gt;什么都没留下&lt;/h2&gt;</summary>
       
     
     
@@ -39,11 +37,11 @@
   </entry>
   
   <entry>
-    <title>Stake(质押)</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/stake/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/stake/</id>
-    <published>2022-12-09T09:37:11.842Z</published>
-    <updated>2022-12-09T09:37:11.842Z</updated>
+    <title>GameFi(Defi的游戏化)</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/GameFi/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/GameFi/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
     
@@ -60,10 +58,10 @@
   
   <entry>
     <title>Farm(耕种)</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/farm/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/farm/</id>
-    <published>2022-12-09T09:37:11.841Z</published>
-    <updated>2022-12-09T09:37:11.841Z</updated>
+    <link href="https://wangjplancelote.github.io/2024/03/26/farm/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/farm/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Yield-Farming-流动性挖矿-Yield-收益-Farm-耕种-，指将资金投入到不同的Defi协议中赚取回报"><a href="#Yield-Farming-流动性挖矿-Yield-收益-Farm-耕种-，指将资金投入到不同的Defi协议中赚取回报" class="headerlink" title="Yield Farming(流动性挖矿) [  Yield(收益), Farm(耕种)，指将资金投入到不同的Defi协议中赚取回报 ]"></a>Yield Farming(流动性挖矿) [  Yield(收益), Farm(耕种)，指将资金投入到不同的Defi协议中赚取回报 ]</h2>]]></content>
     
@@ -79,11 +77,11 @@
   </entry>
   
   <entry>
-    <title>Lend(借贷)</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/lend/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/lend/</id>
-    <published>2022-12-09T09:37:11.841Z</published>
-    <updated>2022-12-09T09:37:11.841Z</updated>
+    <title>Web3.0</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/hello-world/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/hello-world/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
     
@@ -99,11 +97,11 @@
   </entry>
   
   <entry>
-    <title>Web3.0</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/hello-world/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/hello-world/</id>
-    <published>2022-12-09T09:37:11.841Z</published>
-    <updated>2022-12-09T09:37:11.841Z</updated>
+    <title>Lend(借贷)</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/lend/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/lend/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
     
@@ -120,10 +118,10 @@
   
   <entry>
     <title>Liquidity(流动性)</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/liquidity/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/liquidity/</id>
-    <published>2022-12-09T09:37:11.841Z</published>
-    <updated>2022-12-09T09:37:11.841Z</updated>
+    <link href="https://wangjplancelote.github.io/2024/03/26/liquidity/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/liquidity/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
     
@@ -140,10 +138,10 @@
   
   <entry>
     <title>Oracle(预言机)</title>
-    <link href="https://wangjplancelote.github.io/2022/12/09/oracle/"/>
-    <id>https://wangjplancelote.github.io/2022/12/09/oracle/</id>
-    <published>2022-12-09T09:37:11.841Z</published>
-    <updated>2022-12-09T09:37:11.841Z</updated>
+    <link href="https://wangjplancelote.github.io/2024/03/26/oracle/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/oracle/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
     
     <content type="html"><![CDATA[<h2 id="Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据"><a href="#Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据" class="headerlink" title="Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据"></a>Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据</h2>]]></content>
     
@@ -151,6 +149,48 @@
       
       
     <summary type="html">&lt;h2 id=&quot;Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据&quot;&gt;&lt;a href=&quot;#Oracle（预言机）是区块链中非常重要的功能，区块链外信息写入区块链内的机制称为预言机，为智能合约提供可靠的外部数据&quot; </summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Stake(质押)</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/stake/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/stake/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="什么都没留下"><a href="#什么都没留下" class="headerlink" title="什么都没留下"></a>什么都没留下</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;什么都没留下&quot;&gt;&lt;a href=&quot;#什么都没留下&quot; class=&quot;headerlink&quot; title=&quot;什么都没留下&quot;&gt;&lt;/a&gt;什么都没留下&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>区块链钱包</title>
+    <link href="https://wangjplancelote.github.io/2024/03/26/wallet/"/>
+    <id>https://wangjplancelote.github.io/2024/03/26/wallet/</id>
+    <published>2024-03-26T07:13:35.915Z</published>
+    <updated>2024-03-26T07:13:35.915Z</updated>
+    
+    <content type="html"><![CDATA[<font face="微软雅黑" size="3"><h2 id="什么是区块链钱包"><a href="#什么是区块链钱包" class="headerlink" title="什么是区块链钱包"></a>什么是区块链钱包</h2><p>&emsp;区块链钱包是加密货币应用中必不可少的一部分，也是加密基础设施中最基础的一部分，区块链钱包的存在使得区块链收发资金成为可能。区块链钱包同时也是web3.0的一个重要入口，事实上，<strong>web3的绝大多数应用，必须要连接区块链钱包才能进一步使用</strong></p><h4 id="根据钱包的存储方式划分"><a href="#根据钱包的存储方式划分" class="headerlink" title="根据钱包的存储方式划分"></a>根据钱包的存储方式划分</h4><p>&emsp;根据用户是否掌握了私钥，可分为<strong>中心化钱包</strong> 和 <strong>去中心化钱包</strong></p><blockquote><blockquote><p>存储方式是指存在哪，只有用户持有私钥且导入钱包后，私钥存在用户设备上后才叫<strong>中心化钱包</strong>，中心化钱包的数据依赖于服务商自己的账本，交易所就是一个典型的中心化钱包，在交易所内完成的交易，就是交易所在自己的账本上增加记录，这个过程，没有发生在链上。<br>&emsp;而无私钥，或者私钥存储在服务商的服务器里，则就是<strong>去中心化钱包</strong>，</p></blockquote></blockquote><h4 id="根据是否接触网络"><a href="#根据是否接触网络" class="headerlink" title="根据是否接触网络"></a>根据是否接触网络</h4><p>&emsp;钱包是否联网可分为<strong>冷钱包</strong> 和 <strong>热钱包</strong></p><blockquote><blockquote><p>常见的热钱包指的是桌面钱包: 如 <strong>比特币核心钱包</strong>、<strong>Geth</strong>, 手机钱包，<strong>imToken</strong>、<strong>TpToken</strong>等，以及网页钱包, 如 <strong>metamask</strong> ,而冷钱包指的是硬件钱包，无需联网即可使用，冷钱包外形像U盘。</p></blockquote></blockquote><h4 id="根据去中心化程度"><a href="#根据去中心化程度" class="headerlink" title="根据去中心化程度"></a>根据去中心化程度</h4><p>&emsp;可将钱包分为<strong>全节点钱包</strong>、<strong>轻节点钱包</strong>、<strong>中心化钱包</strong></p><blockquote><blockquote><p>全节点钱包：完整储存了区块链一切买卖数据的区块链钱包，一般作为官方钱包与节点客户端运用，能够追溯数字财产的来历，验证数字财产的真实性、验证区块链上的买卖是否完成等，由于全节点钱包存储的数据巨大，且数据需要和区块链同步，因此实用性依赖于具体场景。<br>轻节点钱包：没有彻底存储区块链买卖节点的数据钱包，由于数据不完整，只保留了区块链钱包的基本功能，即接入功能和买卖验证功能，轻钱包所有的功能都是为了支持交易的成功进行，市面上常见的app钱包都是轻钱包：<strong>AToken</strong>、<strong>myToken</strong>、<strong>Kcash</strong>等.</p></blockquote></blockquote><h4 id="根据是否支持多币种"><a href="#根据是否支持多币种" class="headerlink" title="根据是否支持多币种"></a>根据是否支持多币种</h4><p>&emsp;钱包是否支持多币种可分为 <strong>单币种钱包</strong> 和 <strong>多币种钱包</strong></p><blockquote><blockquote><p>单一币种钱包：只为单一区块链资产服务的钱包，也叫主链钱包，一般由项目方或社区开发。<br>多币种钱包：支持多个区块链的数字资产，<br>全币种钱包：支持所有区块链资产，目前全币种钱包很难存在，这意味该钱包需要支持所有类型区块链协议。<br>市场上的多币种钱包已成为主流。<br><strong>imToken</strong> 是依据单ETH主链的多币种钱包，仅支持以ETH协议开发的token。<br><strong>EOSToken</strong> 是以EOS主链的钱包, 仅支持EOS协议开发.</p></blockquote></blockquote><h4 id="根据私钥签名方法可分为单签名钱包和多签名钱包"><a href="#根据私钥签名方法可分为单签名钱包和多签名钱包" class="headerlink" title="根据私钥签名方法可分为单签名钱包和多签名钱包"></a>根据私钥签名方法可分为单签名钱包和多签名钱包</h4><blockquote><blockquote><p>单签名钱包，由单个私钥签名的钱包<br>多签名钱包，需要不同私钥签名进行使用的钱包，一般用于共同管理账户，<br>大多数区块链钱包App都是单签名钱包，Gnosis则是多签名钱包。</p></blockquote></blockquote><h3 id="区块链钱包的设计原理"><a href="#区块链钱包的设计原理" class="headerlink" title="区块链钱包的设计原理"></a>区块链钱包的设计原理</h3><ul><li>私钥、公钥和地址产生的方法<blockquote><p>&emsp; 1.比特币私钥其实是使用SHA-256生成的32字节（256位）的随机数，有效私钥的范围则取决于比特币使用的secp256k1 椭圆曲线数字签名标准。<br>&emsp; 2.在私钥的前面加上版本号，后面添加压缩标志和附加校验码，（所谓附加校验码，就是对私钥经过2次SHA-256运算，取两次哈希结果的前四字节），然后再对其进行Base58编码，就可以得到我们常见的WIF（Wallet import Format)格式的私钥。<br>&emsp; 3.私钥经过椭圆曲线乘法运算，可以得到公钥。公钥是椭圆曲线上的点，并具有x和y坐标。公钥有两种形式：压缩的与非压缩的。早期比特币均使用非压缩公钥，现在大部分客户端默认使用压缩公钥。<br>&emsp; 从私钥推导出公钥、再从公钥推导出公钥哈希都是单向的，也就是<strong>采用不可逆算法</strong></p></blockquote></li></ul><p><strong><em>椭圆曲线算法</em></strong></p><blockquote><blockquote><p>&emsp; 4.公钥产生后，将公钥通过SHA256哈希算法处理得到32字节的哈希值；后对得到的哈希值通过RIPEMD-160算法来得到20字节的哈希值 ——Hash160<br>&emsp; 5.把版本号[2]+Hash160组成的21字节数组进行双次SHA256哈希运算，得到的哈希值的头4个字节作为校验和，放置21字节数组的末尾。<br>&emsp; 6.对组成25位数组进行Base58编码，最后得到地址。</p></blockquote></blockquote><ul><li><h2 id="使用区块链API进行远程调用-常见的一些钱包开源项目："><a href="#使用区块链API进行远程调用-常见的一些钱包开源项目：" class="headerlink" title="使用区块链API进行远程调用&gt;&gt;常见的一些钱包开源项目："></a>使用区块链API进行远程调用<br>&gt;&gt;常见的一些钱包开源项目：</h2><h2 id="bitcoin-Bitcoin-Core，官方出品bitcoinj，比特币协议-Java-版bither，简单安全的比特币钱包Electrum，全平台轻钱包bread，iOS-钱包Mycelium，Android-钱包Copay，同时支持-Bitcoin-和BitcoinCashbitcoin-wallet，又一款-Android-钱包DotNetWallet，-NET-实现的钱包Coinpunk，基于浏览器的钱包btcwallet，Go-实现的钱包"><a href="#bitcoin-Bitcoin-Core，官方出品bitcoinj，比特币协议-Java-版bither，简单安全的比特币钱包Electrum，全平台轻钱包bread，iOS-钱包Mycelium，Android-钱包Copay，同时支持-Bitcoin-和BitcoinCashbitcoin-wallet，又一款-Android-钱包DotNetWallet，-NET-实现的钱包Coinpunk，基于浏览器的钱包btcwallet，Go-实现的钱包" class="headerlink" title="[bitcoin]Bitcoin Core，官方出品bitcoinj，比特币协议 Java 版bither，简单安全的比特币钱包Electrum，全平台轻钱包bread，iOS 钱包Mycelium，Android 钱包Copay，同时支持 Bitcoin 和BitcoinCashbitcoin-wallet，又一款 Android 钱包DotNetWallet，.NET 实现的钱包Coinpunk，基于浏览器的钱包btcwallet，Go 实现的钱包"></a>[<em>bitcoin</em>]<br><strong>Bitcoin Core</strong>，官方出品<br><strong>bitcoinj</strong>，比特币协议 Java 版<br><strong>bither</strong>，简单安全的比特币钱包<br><strong>Electrum</strong>，全平台轻钱包<br><strong>bread，iOS</strong> 钱包<br><strong>Mycelium，Android</strong> 钱包<br><strong>Copay</strong>，同时支持 Bitcoin 和BitcoinCash<br><strong>bitcoin-wallet</strong>，又一款 Android 钱包<br><strong>DotNetWallet</strong>，.NET 实现的钱包<br><strong>Coinpunk</strong>，基于浏览器的钱包<br><strong>btcwallet</strong>，Go 实现的钱包</h2><p>[<em>Ethereum&#x2F;ERC20</em>]<br><strong>go-ethereum</strong>，以太坊协议 Go 版<br><strong>Mist</strong>，官方出品<br><strong>Parity</strong>，支持 Windows、Mac、PC 的钱包<br><strong>MetaMask</strong> chrome浏览器eth wallet插件<br><strong>MyEtherWallet</strong>，基于浏览器的钱包<br><strong>eth-lightwallet</strong>，轻量级 JavasSript 版本钱包<br><strong>ethaddress.org</strong>，纸质版钱包生成器<br><strong>Neureal wallet</strong>，支持 Windows、Mac、PC 的钱包</p></li><li><p>钱包设计：助记词、keystore、密码</p><blockquote><blockquote><p>私钥一般太难记忆了，使用也不方便，所以从钱包设计的角度，就为简化操作同时不丢失安全性，就出现了助记词的方法。<br>一般情况下，助记词由一些单词组成，只要你记住这些单词，按照顺序在钱包中输入，也能打开钱包。<br>根据密钥之间是否有关联，将钱包分为 <em>nondeterministic wallet</em> 和 <em>deterministic wallet</em><br><em>nondeterministic wallet</em>: 密钥对之间没有关联。<br><em>deterministic wallet</em>： 密钥由一个原始的种子主密钥推导而来，常见的推导方式就是树状层级推导，(hierarchical deterministic) 简称HD<br>deterministic wallet 基于BIP32标准实现，通过一个共同的种子维护多对私钥，推导私钥的过程采用不可逆哈希算法，</p></blockquote></blockquote></li></ul><p><em><strong>生成助记词</strong></em></p><blockquote><p>规定熵的位数必须是 32 的整数倍，所以熵的长度取值位128 到 256 之间取 32 的整数倍的值，分别为 128, 160, 192, 224, 256；<br>校验和的长度为熵的长度&#x2F;32 位, 所以校验和长度可为 4，5，6，7，8 位；<br>助记词库有 2048 个词，用 11 位可全部定位词库中所有的词，作为词的索引，故一个词用 11 位表示，助记词的个数可为 (熵+校验和)&#x2F;11，值为 12，15，18，21，24<br>助记词规则:<br>1.生成一个长度为 128~256 位(bits)的随机序列(熵)；<br>2.取熵哈希后的前n位作为校验和(n&#x3D; 熵长度&#x2F;32)；<br>3.随机序列+校验和；<br>4.把步骤3得到的结果每 11位切割；<br>5.步骤4得到的每11位字节匹配词库的一个词；<br>6.步骤5得到的结果就是助记词串;<br><img src="/../assets/name.png" alt="生成助记词"><br>7.助记词句子作为密码；<br>8.”mnemonic” + passphrase 作为盐；<br>9.2048 作为重复计算的次数+HMAC-SHA512 作为随机算法,最终得到BIP32 种子，512 位(64 字节)是期望得到的密钥长度；<br><img src="/../assets/secret.png" alt="生成密钥"></p></blockquote><p>除了助记词之外，钱包还会设计一个密码，作为用户常用的登录方式，<br>keystore：Keystore也是私钥经过加密过后的一个文件，需要你自己设置的密码才能打开文件。这样的好处是就算keystore文件被盗，只要你额外设置的密码够长够随机，那么短时间内私钥也不会泄露，有充足的时间转移地址里面的加密货币到其他地址。Keystore会存储在使用的设备里，这样每次登陆只用输入相应密码即可。</p><p><em><strong>总结</strong></em></p><blockquote><p>钱包助记词生成了种子（Seed），种子（Seed）生成了私钥，私钥推导出公钥，公钥节选部分成了钱包地址。同时钱包提供了keystore，他也是私钥加密后的文件，可以配合正常的密码使用，便捷了用户的钱包使用</p></blockquote><p>[<em>私钥重复问题</em>]<br>私钥产生的机制就决定了会有重复的可能。</p><blockquote><p>&emsp; 私钥有32个字节，一个字节有8位，所以私钥总数是2^(8*32)&#x3D;2^256个≈10^77个<br>假设宇宙有一亿个星系，<br>每个星系有一亿颗恒星，<br>每颗恒星有一亿颗人造卫星，<br>每颗人造卫星上有一亿台超级计算机，<br>每台超级计算机有一亿个CPU，<br>每个CPU每秒可以穷举一亿个私钥。<br>假设有一亿个私钥的地址上有BTC（每个地址平均0.21BTC），那么，多久可能穷举出一个有币的私钥为：<br>10^77（私钥总数）&#x2F;10^8（有币私钥）&#x2F;10^8（星系）&#x2F;10^8（恒星）&#x2F;10^8（卫星）&#x2F;10^8（超级计算机）&#x2F;10^8（CPU）&#x2F;10^8（每秒穷举）&#x3D;10^21秒。<br>10^21秒&#x2F;3600秒&#x2F;24小时&#x2F;365天&#x3D;317098亿年<br>随着时间的累积，再加上还会有其他的公链出现，如果使用同样的私钥生成地址的规则，概率再小也会有几率出现重复的情况。但是穷举法的代价已经远远超过了所获利，因此可以理解私钥是唯一的。</p></blockquote><h4 id="理解钱包的作用"><a href="#理解钱包的作用" class="headerlink" title="理解钱包的作用"></a>理解钱包的作用</h4><blockquote><p>完成一次交易之后，钱包里没有币，也没有NFT，钱包里保存的是自己的区块链地址和对这个地址的操作权限，这些我们交易得到的币、NFT、或者其他什么加密资产是被记录在了各个网络上的对应的区块链中。<br>可以说，钱包是区块链的遥控器，创建钱包时，用助记词算出私钥，私钥和公钥配对出现，公钥算出地址，地址就是你在区块链中的账号，助记词可以重新算出私钥，可重置钱包，同时钱包生成的keystore也可以解密后获得私钥，用于重置钱包。<br>私钥的作用是获得对地址的操作权限。钱包地址可以看作区块链上的一个节点。<br>发起交易，是通过私钥授权，对地址对应的数据区块进行修改。<br></font></p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;font face=&quot;微软雅黑&quot; size=&quot;3&quot;&gt;
+
+&lt;h2 id=&quot;什么是区块链钱包&quot;&gt;&lt;a href=&quot;#什么是区块链钱包&quot; class=&quot;headerlink&quot; title=&quot;什么是区块链钱包&quot;&gt;&lt;/a&gt;什么是区块链钱包&lt;/h2&gt;&lt;p&gt;&amp;emsp;区块链钱包是加密货币应</summary>
       
     
     

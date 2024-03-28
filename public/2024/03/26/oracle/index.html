@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Lancelote">
+    
+    <title>
+        
+            Oracle(预言机) |
+        
+        Lorenzo
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"wangjplancelote.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Lorenzo","avatar":"https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp","logo":"https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp","favicon":"/images/logo.svg","subtitle":"","description":"","keywords":"","author":"Lancelote","language":"zh-CN","timezone":"","email":"wjp19951024@163.com"},"menu":{"home":"/","archives":"/archives","links":"/links"},"first_screen":{"enable":true,"background_img":"/images/robotDog.jpg","background_img_dark":"/images/robotDog.jpg","description":"我曾寻找钥匙多年,但那扇门一直开着","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wangjpLancelote","weixin":null,"qq":null,"zhihu":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{"links":[{"name":"XPoet","link":"https://xpoet.cn/","description":"所有命运的馈赠，早已在暗中标好价格。","avatar":"https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/common-use/avatar.jpg"},{"name":"不知名艺术家","link":"https://jinzhanqi.com/","description":"love artist, love code.","avatar":"https://s3.ax1x.com/2020/11/17/DVvkB4.jpg"},{"name":"薇拉航线","link":"https://www.zuozuovera.com/","description":"computer scientist"}]},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="我曾寻找钥匙多年,但那扇门一直开着" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Lorenzo
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                
+                                首页
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                
+                                归档
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                
+                                友链
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/"
+                    >首页</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives"
+                    >归档</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links"
+                    >友链</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Oracle(预言机)
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Lancelote</span>
+                                
+                                    <span class="author-badge">Lv2</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-03-26 15:13:35</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Tue Mar 26 2024 15:45:02 GMT+0800">2024-03-26 15:45:02</span>
+            </span>
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+
+                    <h1 id="预言机-Oracle"><a href="#预言机-Oracle" class="headerlink" title="预言机(Oracle)"></a>预言机(Oracle)</h1><figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">什么是预言机？</span><br></pre></td></tr></table></figure>
+
+<p>预言机是指数据馈送，它提取区块链数据源（下链）的数据并将数据存放到区块链（上链）上供智能合约使用。因为运行在以太坊上的智能合约无法访问存储在区块链网络之外的信息，预言机是必不可上的。</p>
+<p>预言的意思（Oracle）是指古希腊神话中的神谕，由神或者女祭司发表的预言或指示，因此，这里将外部数据引入区块链的机制被称为 Oracle，即预言机</p>
+<p>预言机赋予了智能合约使用链下数据输入执行的能力，扩展了去中心化应用的价值，例如，去中心化预测市场依靠预言机提供的关于结果的信息，并且能够使用这些信息验证用户的预测。假设 A 下注了 20 个以太币赌谁将成为下一任美国总统，这种情况，链上的数据中是没有关于下一任总统的信息的，预测市场去中心化应用程序需要预言机来确认选举结果，并判定 A 是否有资格获得赌注</p>
+<p>区块链预言机获取验证外部信息（即存储在链下的信息）并将外部信息传送给区块链上运行的智能合约的应用程序。除了拉取链下数据用户并在以太坊进行广播之外，预言机还将信息从区块链推送到外部系统，用户通过以太坊交易发送费用后解锁智能锁的预言机就是一个推送信息的示例。</p>
+<p>预言机充当了一座桥梁，链接区块链上的智能合约与链下数据提供者，如果没有预言机，智能合约智能访问链上的数据，预言机提供了一种使用链下数据处罚智能合约的功能机制。</p>
+<p>预言机的分类：</p>
+<ul>
+<li>数据来源（一种或多种）</li>
+<li>信任模型（中心化&#x2F;去中心化）</li>
+<li>系统架构（立即读取或发布订阅）</li>
+<li>是否检索外部数据供链上合约使用（输入预言机）</li>
+<li>是否将区块量的信息发送给链下应用程序（输出预言机）</li>
+<li>在链下执行计算任务（计算预言机）</li>
+</ul>
+<h2 id="预言机解决了什么问题"><a href="#预言机解决了什么问题" class="headerlink" title="预言机解决了什么问题"></a>预言机解决了什么问题</h2><p>智能合约不仅仅只是作为区块链特定地址运行的代码段，更广义来说，智能合约是指满足特定条件后能够执行各方之间协议的<strong>自执行软件程序</strong></p>
+<p>但是问题也在于此，因为以太坊是确定性系统，确定性系统是指在给定初始状态和特定输入时总是产生相同结果的系统，即在使用输入计算输出的过程中不存在随机性和变化</p>
+<p>要实现确定性执行，区块链节点限制为通过仅使用存储在区块链本身中的数据就简单的二进制(true&#x2F;false)问题达成共识，这类问题的示例包括：</p>
+<ul>
+<li>账户所有者（由公钥识别）是否使用配对私钥签署该交易</li>
+<li>该账户是否有足够资金支付这笔交易</li>
+<li>这笔交易在该智能合约中是否有效</li>
+</ul>
+<p>如果区块链从外部来源（现实世界）接受信息，确定性将不可能实现，阻止节点就区块链状态变化的有效性达成一致，以一个智能合约为例，该合约根据从一个传统价格应用程序接口获得的当前的以太币-美元（ETH&#x2F;USDT）汇率窒执行交易。该汇率会经常变动，甚至会被弃用会黑客攻击，这意味着执行相同合约代码的节点会得出不同的结果</p>
+<p>全球会数千个节点处理交易的公共区块链，如以太坊，确定性至关重要，由于没有中心化阻止作为真实性来源，期望节点在进行相同交易后达到相同状态。节点 A 执行智能合约的代码得到结果“3”，而 B 节点运行相同交易后得到“7”，这将打破共识并消除以太坊作为去中心化计算平台的价值。</p>
+<p>以上就是<strong>区块链从外部来源获取信息的问题</strong></p>
+<p>预言机解决了这一问题，它从链下来源获取信息并存储在区块链上供智能合约使用。由于存储在链上的信息是不可更改和公共可用的，以太坊节点可以安全地使用预言机导入的链下数据计算状态变化。</p>
+<p>为此，预言机通常由链上运行的智能合约和一些链下组件构成。链上合约接收其他智能合约的数据请求，并将这些请求传送给链下组件（称为预言机节点）。这类预言机节点可以查询数据源-例如使用 API 并发送交易将请求的数据存储在智能合约的存储中。</p>
+<p>总结就是：预言机弥合了区块链和外部环境（如真实世界）的信息缺口，创建了混合智能合约，原理是基于链上合约代码和链下基础设施的结合。</p>
+<h2 id="什么是预言机问题"><a href="#什么是预言机问题" class="headerlink" title="什么是预言机问题"></a>什么是预言机问题</h2><p>如何依赖一个实体或多个实体向区块链引入外部信息（即将信息存储在交易的数据有效负载中），智能合约很容易获取链下数据，但是会有新的问题：</p>
+<ul>
+<li>如何验证注入信息是从正确来源提取的或者未被篡改</li>
+<li>如何确保这些数据始终可用且定期更新。</li>
+</ul>
+<p>重要的是确保来自预言机的数据是正确的，否则智能合约执行会产生错误结果，这是一个<strong>信任</strong>问题</p>
+<p>不同的预言机在解决预言机问题方面采取的方法各不相同，只需要满足以下几点的中几个即可：</p>
+<ul>
+<li><strong>正确性</strong>：预言机不应导致智能合约基于无效的链下数据触发状态变化。因此，预言机必须保证数据的真实性和完整性-真实性是指数据从正确来源获取，完整性是指数据在发送到链上前保持完好无缺。</li>
+<li><strong>可用性</strong>：预言机不应延迟或阻止智能合约执行操作或触发状态变化，该特点要求预言机提供的数据在请求时可用并且不会出现间断。</li>
+<li>激励兼容性：预言机激励链下数据提供者向智能合约提交正确的信息。包括可归因性和问责性，可归因性允许将一条外部信息与其提供者关联起来，问责性指的是数据提供者与提供的信息绑定，这样就可以根据所提供信息的质量对他们进行奖励或惩罚。</li>
+</ul>
+<h2 id="预言机合约"><a href="#预言机合约" class="headerlink" title="预言机合约"></a>预言机合约</h2><p>预言机合约是预言机服务的链上组成部分，它侦听其他合约发出的数据请求，将数据查询转发到预言机及诶单并将返回的数据向客户端合约广播，该合约还可以对返回的数据点进行一些计算，以产生聚合值并发送给请求合约。</p>
+<p>以下是合约示例</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br></pre></td><td class="code"><pre><span class="line">pragma solidity &gt;=<span class="number">0.4</span><span class="number">.21</span> &lt;<span class="number">0.6</span><span class="number">.0</span>;</span><br><span class="line"></span><br><span class="line">contract <span class="title class_">Oracle</span> &#123;</span><br><span class="line">  <span class="title class_">Request</span>[] requests; <span class="comment">//list of requests made to the contract</span></span><br><span class="line">  uint currentId = <span class="number">0</span>; <span class="comment">//increasing request id</span></span><br><span class="line">  uint minQuorum = <span class="number">2</span>; <span class="comment">//minimum number of responses to receive before declaring final result</span></span><br><span class="line">  uint totalOracleCount = <span class="number">3</span>; <span class="comment">// Hardcoded oracle count</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">// defines a general api request</span></span><br><span class="line">  struct <span class="title class_">Request</span> &#123;</span><br><span class="line">    uint id;                            <span class="comment">//request id</span></span><br><span class="line">    string urlToQuery;                  <span class="comment">//API url</span></span><br><span class="line">    string attributeToFetch;            <span class="comment">//json attribute (key) to retrieve in the response</span></span><br><span class="line">    string agreedValue;                 <span class="comment">//value from key</span></span><br><span class="line">    <span class="title function_">mapping</span>(<span class="function"><span class="params">uint</span> =&gt;</span> string) answers;     <span class="comment">//answers provided by the oracles</span></span><br><span class="line">    <span class="title function_">mapping</span>(<span class="function"><span class="params">address</span> =&gt;</span> uint) quorum;    <span class="comment">//oracles which will query the answer (1=oracle hasn&#x27;t voted, 2=oracle has voted)</span></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//event that triggers oracle outside of the blockchain</span></span><br><span class="line">  event <span class="title class_">NewRequest</span> (</span><br><span class="line">    uint id,</span><br><span class="line">    string urlToQuery,</span><br><span class="line">    string attributeToFetch</span><br><span class="line">  );</span><br><span class="line"></span><br><span class="line">  <span class="comment">//triggered when there&#x27;s a consensus on the final result</span></span><br><span class="line">  event <span class="title class_">UpdatedRequest</span> (</span><br><span class="line">    uint id,</span><br><span class="line">    string urlToQuery,</span><br><span class="line">    string attributeToFetch,</span><br><span class="line">    string agreedValue</span><br><span class="line">  );</span><br><span class="line"></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">createRequest</span> (</span><br><span class="line">    string memory _urlToQuery,</span><br><span class="line">    string memory _attributeToFetch</span><br><span class="line">  )</span><br><span class="line">  public</span><br><span class="line">  &#123;</span><br><span class="line">    uint length = requests.<span class="title function_">push</span>(<span class="title class_">Request</span>(currentId, _urlToQuery, _attributeToFetch, <span class="string">&quot;&quot;</span>));</span><br><span class="line">    <span class="title class_">Request</span> storage r = requests[length-<span class="number">1</span>];</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Hardcoded oracles address</span></span><br><span class="line">    r.<span class="property">quorum</span>[<span class="title function_">address</span>(<span class="number">0x6c2339b46F41a06f09CA0051ddAD54D1e582bA77</span>)] = <span class="number">1</span>;</span><br><span class="line">    r.<span class="property">quorum</span>[<span class="title function_">address</span>(<span class="number">0xb5346CF224c02186606e5f89EACC21eC25398077</span>)] = <span class="number">1</span>;</span><br><span class="line">    r.<span class="property">quorum</span>[<span class="title function_">address</span>(<span class="number">0xa2997F1CA363D11a0a35bB1Ac0Ff7849bc13e914</span>)] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// launch an event to be detected by oracle outside of blockchain</span></span><br><span class="line">    emit <span class="title class_">NewRequest</span> (</span><br><span class="line">      currentId,</span><br><span class="line">      _urlToQuery,</span><br><span class="line">      _attributeToFetch</span><br><span class="line">    );</span><br><span class="line"></span><br><span class="line">    <span class="comment">// increase request id</span></span><br><span class="line">    currentId++;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//called by the oracle to record its answer</span></span><br><span class="line">  <span class="keyword">function</span> <span class="title function_">updateRequest</span> (</span><br><span class="line">    uint _id,</span><br><span class="line">    string memory _valueRetrieved</span><br><span class="line">  ) public &#123;</span><br><span class="line"></span><br><span class="line">    <span class="title class_">Request</span> storage currRequest = requests[_id];</span><br><span class="line"></span><br><span class="line">    <span class="comment">//check if oracle is in the list of trusted oracles</span></span><br><span class="line">    <span class="comment">//and if the oracle hasn&#x27;t voted yet</span></span><br><span class="line">    <span class="keyword">if</span>(currRequest.<span class="property">quorum</span>[<span class="title function_">address</span>(msg.<span class="property">sender</span>)] == <span class="number">1</span>)&#123;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//marking that this address has voted</span></span><br><span class="line">      currRequest.<span class="property">quorum</span>[msg.<span class="property">sender</span>] = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//iterate through &quot;array&quot; of answers until a position if free and save the retrieved value</span></span><br><span class="line">      uint tmpI = <span class="number">0</span>;</span><br><span class="line">      bool found = <span class="literal">false</span>;</span><br><span class="line">      <span class="keyword">while</span>(!found) &#123;</span><br><span class="line">        <span class="comment">//find first empty slot</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="title function_">bytes</span>(currRequest.<span class="property">answers</span>[tmpI]).<span class="property">length</span> == <span class="number">0</span>)&#123;</span><br><span class="line">          found = <span class="literal">true</span>;</span><br><span class="line">          currRequest.<span class="property">answers</span>[tmpI] = _valueRetrieved;</span><br><span class="line">        &#125;</span><br><span class="line">        tmpI++;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      uint currentQuorum = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">      <span class="comment">//iterate through oracle list and check if enough oracles(minimum quorum)</span></span><br><span class="line">      <span class="comment">//have voted the same answer has the current one</span></span><br><span class="line">      <span class="keyword">for</span>(uint i = <span class="number">0</span>; i &lt; totalOracleCount; i++)&#123;</span><br><span class="line">        bytes memory a = <span class="title function_">bytes</span>(currRequest.<span class="property">answers</span>[i]);</span><br><span class="line">        bytes memory b = <span class="title function_">bytes</span>(_valueRetrieved);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span>(<span class="title function_">keccak256</span>(a) == <span class="title function_">keccak256</span>(b))&#123;</span><br><span class="line">          currentQuorum++;</span><br><span class="line">          <span class="keyword">if</span>(currentQuorum &gt;= minQuorum)&#123;</span><br><span class="line">            currRequest.<span class="property">agreedValue</span> = _valueRetrieved;</span><br><span class="line">            emit <span class="title class_">UpdatedRequest</span> (</span><br><span class="line">              currRequest.<span class="property">id</span>,</span><br><span class="line">              currRequest.<span class="property">urlToQuery</span>,</span><br><span class="line">              currRequest.<span class="property">attributeToFetch</span>,</span><br><span class="line">              currRequest.<span class="property">agreedValue</span></span><br><span class="line">            );</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>预言机的节点的常见任务是，想 api 发送请求，解析响应以提取相关数据，设置为区块链可读的输出格式，并通过将输入包含在预言机合约的交易中将其发送到链上，在利用“真实性证明”证明所提交信息的有效性和完整性时，可能也会用到预言机节点。</p>
+<p>预言机类型：</p>
+<ul>
+<li>中心化预言机，由单体控制，该实体负责聚合链下信息并按照请求更新预言机合约的数据，中心化预言机效率高，因为他们依赖单一真实性来源，在专有数据集由所有者直接发布且有公认签名的情况下，中心化预言机可能是更好的选择。但是存在低正确性保障和可用性差的问题，中心化预言机的提供者如何关闭服务或者遭遇了黑客的攻击的话，智能合约会面临 Dos 攻击的风险</li>
+<li>去中心化预言机，会尝试不同的方法实现数据的正确性，其中包括使用证明来证明返回信息的真实性和完整性。</li>
+</ul>
+<h2 id="预言机的应用"><a href="#预言机的应用" class="headerlink" title="预言机的应用"></a>预言机的应用</h2><ul>
+<li>检索金融数据<br>DeFi 应用允许 p2p 贷款，借贷和资产交易，需要获取不同的金融信息，包括汇率数据的资本市场数据，常用的如：Chainlink price Feeds、Compound Protocol 的<a class="link"   target="_blank" rel="noopener" href="https://docs.compound.finance/v2/prices/" >开放式喂价工具<i class="fas fa-external-link-alt"></i></a>、Uniswap 的<a class="link"   target="_blank" rel="noopener" href="https://docs.uniswap.org/contracts/v2/concepts/core-concepts/oracles" >时间加权平均价格(TWAP)<i class="fas fa-external-link-alt"></i></a></li>
+<li>生成可验证的随机性<br>某些区块链的应用程序（如基于区块链的游戏或彩票方案），需要高度的不可预测性和随机性才能工作，然而，区块链的确定性执行消除了任何随机来源<br>通常方法是伪随机密码函数，例如 blockhash，但是以太坊过渡到权益证明意味着不能再依靠 blockhash 获得链上随机性。可以在链下生成随机值并发送到链上，但这样做对用户有很高的信任要求，他们必须相信值确实是通过不可预测的机制产生的，并且在传输过程中未被改动。<br>计算预言机则可以解决这一问题，可以安全的生成链下随机结果并连同证实该过程不可预测性的加密证明一起在链上广播。</li>
+<li>获取事件结果<br>预言机可以创建响应真实事件的智能合约，预言机服务可以允许合约通过链下组件连接到外部应用程序接口并使用来自这些数据源的信息。</li>
+<li>智能合约自动化</li>
+</ul>
+<h2 id="预言机应用"><a href="#预言机应用" class="headerlink" title="预言机应用"></a>预言机应用</h2><ul>
+<li><a class="link"   target="_blank" rel="noopener" href="https://chain.link/" >Chainlink<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://witnet.io/" >Witnet<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://uma.xyz/" >UMA 预言机<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://tellor.io/" >Tellor<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://bandprotocol.com/" >Band Protocol<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://provable.xyz/" >Provable<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://paralink.network/" >Paralink<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://dos.network/" >Dos.Network<i class="fas fa-external-link-alt"></i></a></li>
+<li><a class="link"   target="_blank" rel="noopener" href="https://pyth.network/" >Pyth<i class="fas fa-external-link-alt"></i></a></li>
+</ul>
+
+                </div>
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/03/26/lend/"
+                                   title="Lend(借贷)"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Lend(借贷)</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/03/26/liquidity/"
+                                   title="Liquidity(流动性)"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">Liquidity(流动性)</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Lancelote</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-toggle-theme-mode flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>

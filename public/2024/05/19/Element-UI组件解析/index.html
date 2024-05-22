@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Lancelote">
+    
+    <title>
+        
+            Element-UI组件解析 |
+        
+        Lorenzo
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"wangjplancelote.github.io","root":"/","language":"zh-CN","path":"search.json"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Lorenzo","avatar":"https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp","logo":"https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp","favicon":"/images/logo.svg","subtitle":"","description":"","keywords":"","author":"Lancelote","language":"zh-CN","timezone":"","email":"wjp19951024@163.com"},"menu":{"home":"/","archives":"/archives","links":"/links"},"first_screen":{"enable":true,"background_img":"/images/robotDog.jpg","background_img_dark":"/images/robotDog.jpg","title_style":"color: red;","description":"我曾寻找钥匙多年,但那扇门一直开着","hitokoto":false},"social_contact":{"enable":true,"links":{"github":"https://github.com/wangjpLancelote","weixin":null,"qq":null,"zhihu":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"updated"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":false,"preload":false},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2020,"word_count":false,"icp":{"enable":false,"record_code":null,"url":"https://beian.miit.gov.cn"},"site_deploy":{"enable":false,"provider":"github","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"root":"","source_data":{"links":[{"name":"XPoet","link":"https://xpoet.cn/","description":"所有命运的馈赠，早已在暗中标好价格。","avatar":"https://cdn.jsdelivr.net/gh/XPoet/image-hosting@master/common-use/avatar.jpg"},{"name":"不知名艺术家","link":"https://jinzhanqi.com/","description":"love artist, love code.","avatar":"https://s3.ax1x.com/2020/11/17/DVvkB4.jpg"},{"name":"薇拉航线","link":"https://www.zuozuovera.com/","description":"computer scientist"}]},"version":"4.1.0"}
+    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
+    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
+    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
+  </script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="我曾寻找钥匙多年,但那扇门一直开着" type="application/atom+xml">
+</head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Lorenzo
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                
+                                首页
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                
+                                归档
+                            </a>
+                        </li>
+                    
+                        
+                        <li class="menu-item">
+                            <a class=""
+                               href="/links"
+                            >
+                                
+                                友链
+                            </a>
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/"
+                    >首页</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives"
+                    >归档</a>
+                </li>
+            
+                
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/links"
+                    >友链</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        Element-UI组件解析
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="https://github.com/wangjpLancelote/picx-images-hosting/raw/master/bape.4cuttkttdyo0.webp">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Lancelote</span>
+                                
+                                    <span class="author-badge">Lv3</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-05-19 21:34:38</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sun May 19 2024 21:35:20 GMT+0800">2024-05-19 21:35:20</span>
+            </span>
+        
+
+        
+
+        
+
+        
+        
+        
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body">
+                    
+
+                    <aside>
+💡 组件上层封装基本上都是基于已有的UI组件库或者是结合一些前端框架开进行的，如利用ElementUI或者antd进行二次开发，利用Vue/React等前端框架，结合一下UI库如TailwindCSS进行UI修饰，完成封装
+
+</aside>
+
+<p>ElementUI：Form 组件拆解</p>
+<aside>
+💡 Form组件一直是各大UI框架的重头戏，以ElementUI为例，看看Form组件是如何设计的。
+
+</aside>
+
+<p>先来看看 ElementUI 的 Form 组件是如何使用的</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-form</span> <span class="attr">:model</span>=<span class="string">&quot;form&quot;</span> <span class="attr">label-width</span>=<span class="string">&quot;auto&quot;</span> <span class="attr">style</span>=<span class="string">&quot;max-width: 600px&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-form-item</span> <span class="attr">label</span>=<span class="string">&quot;Activity name&quot;</span> <span class="attr">props</span>=<span class="string">&quot;name&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">el-input</span> <span class="attr">v-model</span>=<span class="string">&quot;form.name&quot;</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-form-item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-form</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>el-form 组件作为最外层包裹的标签，model 属性是整个 form 组件传入的对象，内部的 form-item 包裹了具体组件内容，作为每个 form 组件的具体表现形式，在 form-item 标签上的属性 props 则是接收 form 传入的 model 对象的属性值，不需要在 input 上指定 v-model，即可更新 form.name 的值，那么这里面是怎么做的呢。</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;--! Form组件 --&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">form</span> <span class="attr">:class</span>=<span class="string">&quot;formClasses&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">slot</span> /&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的 Form 组件能看到，ElementUI 的 Form 组件是用的 html 原声的 form 标签实现的，传入一个 formClasses 覆盖原声的 class 样式</p>
+<p>Form 组件用了 provide&#x2F;inject 依赖注入的方式传递深层次属性，首先进行 provide 依赖收集</p>
+<figure class="highlight tsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">provide</span>(</span><br><span class="line">  formContextKey,</span><br><span class="line">  <span class="title function_">reactive</span>(&#123;</span><br><span class="line">    ...<span class="title function_">toRefs</span>(props),</span><br><span class="line">    emit,</span><br><span class="line"></span><br><span class="line">    resetFields,</span><br><span class="line">    clearValidate,</span><br><span class="line">    validateField,</span><br><span class="line">    getField,</span><br><span class="line">    addField,</span><br><span class="line">    removeField,</span><br><span class="line"></span><br><span class="line">    ...<span class="title function_">useFormLabelWidth</span>(),</span><br><span class="line">  &#125;)</span><br><span class="line">)</span><br><span class="line">这里的formContextKey是一个常量，用<span class="built_in">symbol</span>修饰的变量</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">formContextKey</span>: <span class="title class_">InjectionKey</span>&lt;<span class="title class_">FormContext</span>&gt; =</span><br><span class="line">  <span class="title class_">Symbol</span>(<span class="string">&#x27;formContextKey&#x27;</span>)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> <span class="attr">formItemContextKey</span>: <span class="title class_">InjectionKey</span>&lt;<span class="title class_">FormItemContext</span>&gt; =</span><br><span class="line">  <span class="title class_">Symbol</span>(<span class="string">&#x27;formItemContextKey&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<p>上面的 emit 是 form 组件导出的方法：validate，以及 resetField 之类的都是 form 全局方法，通过 form 全局依赖注入到 formContextKey 上，具体使用场景举个例子：</p>
+<figure class="highlight tsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> formRef = <span class="title function_">ref</span>(); <span class="comment">// 赋值给Form组件的ref属性变量</span></span><br><span class="line"></span><br><span class="line">formRef.<span class="title function_">validate</span>();</span><br><span class="line">formRef.<span class="title function_">resetFields</span>();</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里的formRef是赋值给elForm组件的ref变量，使用的就是Form组件导出的全局变量</span></span><br></pre></td></tr></table></figure>
+
+<p>Form 组件完成了一些全局方法的注册，外层 props 的定义，以及顶层 form 标签的构建，那么 formItem 是如何接收这些属性的呢：inject</p>
+<figure class="highlight tsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> formContext = <span class="title function_">inject</span>(formContextKey, <span class="literal">undefined</span>);</span><br><span class="line"><span class="keyword">const</span> parentFormItemContext = <span class="title function_">inject</span>(formItemContextKey, <span class="literal">undefined</span>);</span><br><span class="line"><span class="comment">// formContext就是从Form组件传入的属性内容</span></span><br><span class="line"><span class="comment">// 将Form组件的属性model的数据获取之后，返回对应的value，用于在formItem中进行表单校验等处理</span></span><br><span class="line"><span class="keyword">const</span> fieldValue = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> model = formContext?.<span class="property">model</span>;</span><br><span class="line">  <span class="keyword">if</span> (!model || !props.<span class="property">prop</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">getProp</span>(model, props.<span class="property">prop</span>).<span class="property">value</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这里获取的propString就是在formItem标签上的属性prop的内容，表示获取每个formItem的字段</span></span><br><span class="line"><span class="keyword">const</span> propString = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">if</span> (!props.<span class="property">prop</span>) <span class="keyword">return</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">isString</span>(props.<span class="property">prop</span>) ? props.<span class="property">prop</span> : props.<span class="property">prop</span>.<span class="title function_">join</span>(<span class="string">&quot;.&quot;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 对每个formItem上的prop属性进行表单检验处理</span></span><br><span class="line"><span class="keyword">const</span> doValidate = <span class="keyword">async</span> (<span class="attr">rules</span>: <span class="title class_">RuleItem</span>[]): <span class="title class_">Promise</span>&lt;<span class="literal">true</span>&gt; =&gt; &#123;</span><br><span class="line">  <span class="keyword">const</span> modelName = propString.<span class="property">value</span>;</span><br><span class="line">  <span class="keyword">const</span> validator = <span class="keyword">new</span> <span class="title class_">AsyncValidator</span>(&#123;</span><br><span class="line">    [modelName]: rules,</span><br><span class="line">  &#125;);</span><br><span class="line">  <span class="keyword">return</span> validator</span><br><span class="line">    .<span class="title function_">validate</span>(&#123; [modelName]: fieldValue.<span class="property">value</span> &#125;, &#123; <span class="attr">firstFields</span>: <span class="literal">true</span> &#125;)</span><br><span class="line">    .<span class="title function_">then</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">      <span class="title function_">onValidationSucceeded</span>();</span><br><span class="line">      <span class="keyword">return</span> <span class="literal">true</span> <span class="keyword">as</span> <span class="keyword">const</span>;</span><br><span class="line">    &#125;)</span><br><span class="line">    .<span class="title function_">catch</span>(<span class="function">(<span class="params">err: FormValidateFailure</span>) =&gt;</span> &#123;</span><br><span class="line">      <span class="title function_">onValidationFailed</span>(err <span class="keyword">as</span> <span class="title class_">FormValidateFailure</span>);</span><br><span class="line">      <span class="keyword">return</span> <span class="title class_">Promise</span>.<span class="title function_">reject</span>(err);</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>这里有个问题，如何将 formItem 下的组件的值赋值给 model.prop 的属性上</p>
+<figure class="highlight tsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里model.prop会将值作为fieldValue的默认值</span></span><br><span class="line"><span class="keyword">const</span> fieldValue = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> model = formContext?.<span class="property">model</span>;</span><br><span class="line">  <span class="keyword">if</span> (!model || !props.<span class="property">prop</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">getProp</span>(model, props.<span class="property">prop</span>).<span class="property">value</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">initialValue = <span class="title function_">clone</span>(fieldValue.<span class="property">value</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 那么在input等组件的值发生改变的时候，formItem又是如何监听到值的变化并且完成model.prop的更新的呢</span></span><br><span class="line"><span class="comment">// 这里用computed计算属性，返回model.prop的值，而在input等组件上使用v-model对model.prop实现数据的双向绑定</span></span><br><span class="line"><span class="comment">// 因此formItem下的input等组件必须要显示的将model.prop双向绑定上</span></span><br><span class="line"><span class="keyword">const</span> fieldValue = <span class="title function_">computed</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="keyword">const</span> model = formContext?.<span class="property">model</span>;</span><br><span class="line">  <span class="keyword">if</span> (!model || !props.<span class="property">prop</span>) &#123;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">return</span> <span class="title function_">getProp</span>(model, props.<span class="property">prop</span>).<span class="property">value</span>;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 此外，input组件会传入form属性，这个form属性的值就是从Form组件全局导出的，用于确定form表单下的id对应值</span></span><br><span class="line"><span class="comment">// 同一个id对应的表单项会互相关联</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">:id</span>=<span class="string">&quot;inputId&quot;</span> <span class="attr">:form</span>=<span class="string">&quot;form&quot;</span> /&gt;</span></span><br><span class="line"></span><br><span class="line">const &#123; form: elForm, formItem: elFormItem &#125; = useFormItem() &lt;--!</span><br><span class="line">这里的inputId和Form导出的是同一个实例 --&gt;</span><br></pre></td></tr></table></figure>
+
+<aside>
+💡 总结：Form和FormItem之间的数据传递是用的provide和inject，FormItem组件下的input等组件的数据双向绑定则是借助了form属性和id属性，封装了formItemHooks用于组件内部调用以使用Form和FormItem这两个全局变量，所有的全局方法以defineExpose的形式导出
+
+</aside>
+
+<p>ElementUI：Table 组件</p>
+<aside>
+💡 Table组件的难点主要在表格宽高自适应，固定行和列，多级表格的样式，是比Form组件的设计难度更加大的存在
+
+</aside>
+
+<p>Table 组件导出了两个组件模块：Table 和 TableColumn，先来看看 Table 组件的设计</p>
+<p>整个 Table 组件的 template 部分分为两个区域，整个组件由外层的 tableWrapper 包裹，tableWrapper 外层布局融合了传入的 style 和 class 属性，规定了 table 整体的布局，这些 style 和 class 以命名空间的形式动态的加载到 class 中</p>
+<p>table 的核心分为：原生 table 包裹，table-header 组件，table-body，table-footer</p>
+<p>其中，bodyWrapper 下使用了 scrollbar 组件包裹，目的是解决表格超出当前页面高度时，出现滚动条</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">ref</span>=<span class="string">&quot;bodyWrapper&quot;</span> <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;body-wrapper&#x27;)&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-scrollbar</span></span></span><br><span class="line"><span class="tag">    <span class="attr">ref</span>=<span class="string">&quot;scrollBarRef&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:view-style</span>=<span class="string">&quot;scrollbarViewStyle&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:wrap-style</span>=<span class="string">&quot;scrollbarStyle&quot;</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:always</span>=<span class="string">&quot;scrollbarAlwaysOn&quot;</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">table</span></span></span><br><span class="line"><span class="tag">      <span class="attr">ref</span>=<span class="string">&quot;tableBody&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;body&#x27;)&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">cellspacing</span>=<span class="string">&quot;0&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">cellpadding</span>=<span class="string">&quot;0&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">border</span>=<span class="string">&quot;0&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:style</span>=<span class="string">&quot;&#123;</span></span></span><br><span class="line"><span class="string"><span class="tag">              width: bodyWidth,</span></span></span><br><span class="line"><span class="string"><span class="tag">              tableLayout,</span></span></span><br><span class="line"><span class="string"><span class="tag">            &#125;&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">hColgroup</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:columns</span>=<span class="string">&quot;store.states.columns.value&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:table-layout</span>=<span class="string">&quot;tableLayout&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">table-header</span></span></span><br><span class="line"><span class="tag">        <span class="attr">v-if</span>=<span class="string">&quot;showHeader &amp;&amp; tableLayout === &#x27;auto&#x27;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">ref</span>=<span class="string">&quot;tableHeaderRef&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;body-header&#x27;)&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:border</span>=<span class="string">&quot;border&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:default-sort</span>=<span class="string">&quot;defaultSort&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:store</span>=<span class="string">&quot;store&quot;</span></span></span><br><span class="line"><span class="tag">        @<span class="attr">set-drag-visible</span>=<span class="string">&quot;setDragVisible&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">table-body</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:context</span>=<span class="string">&quot;context&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:highlight</span>=<span class="string">&quot;highlightCurrentRow&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:row-class-name</span>=<span class="string">&quot;rowClassName&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:tooltip-effect</span>=<span class="string">&quot;tooltipEffect&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:tooltip-options</span>=<span class="string">&quot;tooltipOptions&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:row-style</span>=<span class="string">&quot;rowStyle&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:store</span>=<span class="string">&quot;store&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:stripe</span>=<span class="string">&quot;stripe&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">table-footer</span></span></span><br><span class="line"><span class="tag">        <span class="attr">v-if</span>=<span class="string">&quot;showSummary &amp;&amp; tableLayout === &#x27;auto&#x27;&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;body-footer&#x27;)&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:border</span>=<span class="string">&quot;border&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:default-sort</span>=<span class="string">&quot;defaultSort&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:store</span>=<span class="string">&quot;store&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:sum-text</span>=<span class="string">&quot;computedSumText&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">:summary-method</span>=<span class="string">&quot;summaryMethod&quot;</span></span></span><br><span class="line"><span class="tag">      /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">      <span class="attr">v-if</span>=<span class="string">&quot;isEmpty&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">ref</span>=<span class="string">&quot;emptyBlock&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:style</span>=<span class="string">&quot;emptyBlockStyle&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;empty-block&#x27;)&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">span</span> <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;empty-text&#x27;)&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;empty&quot;</span>&gt;</span>&#123;&#123; computedEmptyText &#125;&#125;<span class="tag">&lt;/<span class="name">slot</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span></span></span><br><span class="line"><span class="tag">      <span class="attr">v-if</span>=<span class="string">&quot;$slots.append&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">ref</span>=<span class="string">&quot;appendWrapper&quot;</span></span></span><br><span class="line"><span class="tag">      <span class="attr">:class</span>=<span class="string">&quot;ns.e(&#x27;append-wrapper&#x27;)&quot;</span></span></span><br><span class="line"><span class="tag">    &gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">slot</span> <span class="attr">name</span>=<span class="string">&quot;append&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-scrollbar</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>table-footer 是为了显示什么内容呢，上图能看到 showSummary，当需要显示表格总计的情况时，就在 table-footer 上显示</p>
+<p>一个一个分析 Table 组件，从 table-header 开始</p>
+<p>table-header 是用的 h()方法渲染的 UI，导出的是一个含有 setup 方法并且返回用 h 函数渲染的 dom 结构，具体设计如下</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="title function_">h</span>(</span><br><span class="line">  <span class="string">&quot;thead&quot;</span>,</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="attr">class</span>: &#123; [ns.<span class="title function_">is</span>(<span class="string">&quot;group&quot;</span>)]: isGroup &#125;,</span><br><span class="line">  &#125;,</span><br><span class="line">  columnRows.<span class="title function_">map</span>(<span class="function">(<span class="params">subColumns, rowIndex</span>) =&gt;</span></span><br><span class="line">    <span class="title function_">h</span>(</span><br><span class="line">      <span class="string">&quot;tr&quot;</span>,</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="attr">class</span>: <span class="title function_">getHeaderRowClass</span>(rowIndex),</span><br><span class="line">        <span class="attr">key</span>: rowIndex,</span><br><span class="line">        <span class="attr">style</span>: <span class="title function_">getHeaderRowStyle</span>(rowIndex),</span><br><span class="line">      &#125;,</span><br><span class="line">      subColumns.<span class="title function_">map</span>(<span class="function">(<span class="params">column, cellIndex</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (column.<span class="property">rowSpan</span> &gt; rowSpan) &#123;</span><br><span class="line">          rowSpan = column.<span class="property">rowSpan</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="title function_">h</span>(</span><br><span class="line">          <span class="string">&quot;th&quot;</span>,</span><br><span class="line">          &#123;</span><br><span class="line">            <span class="attr">class</span>: <span class="title function_">getHeaderCellClass</span>(rowIndex, cellIndex, subColumns, column),</span><br><span class="line">            <span class="attr">colspan</span>: column.<span class="property">colSpan</span>,</span><br><span class="line">            <span class="attr">key</span>: <span class="string">`<span class="subst">$&#123;column.id&#125;</span>-thead`</span>,</span><br><span class="line">            <span class="attr">rowspan</span>: column.<span class="property">rowSpan</span>,</span><br><span class="line">            <span class="attr">style</span>: <span class="title function_">getHeaderCellStyle</span>(rowIndex, cellIndex, subColumns, column),</span><br><span class="line">            <span class="attr">onClick</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span> <span class="title function_">handleHeaderClick</span>($event, column),</span><br><span class="line">            <span class="attr">onContextmenu</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span> <span class="title function_">handleHeaderContextMenu</span>($event, column),</span><br><span class="line">            <span class="attr">onMousedown</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span> <span class="title function_">handleMouseDown</span>($event, column),</span><br><span class="line">            <span class="attr">onMousemove</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span> <span class="title function_">handleMouseMove</span>($event, column),</span><br><span class="line">            <span class="attr">onMouseout</span>: handleMouseOut,</span><br><span class="line">          &#125;,</span><br><span class="line">          [</span><br><span class="line">            <span class="title function_">h</span>(</span><br><span class="line">              <span class="string">&quot;div&quot;</span>,</span><br><span class="line">              &#123;</span><br><span class="line">                <span class="attr">class</span>: [</span><br><span class="line">                  <span class="string">&quot;cell&quot;</span>,</span><br><span class="line">                  column.<span class="property">filteredValue</span> &amp;&amp; column.<span class="property">filteredValue</span>.<span class="property">length</span> &gt; <span class="number">0</span></span><br><span class="line">                    ? <span class="string">&quot;highlight&quot;</span></span><br><span class="line">                    : <span class="string">&quot;&quot;</span>,</span><br><span class="line">                ],</span><br><span class="line">              &#125;,</span><br><span class="line">              [</span><br><span class="line">                column.<span class="property">renderHeader</span></span><br><span class="line">                  ? column.<span class="title function_">renderHeader</span>(&#123;</span><br><span class="line">                      column,</span><br><span class="line">                      <span class="attr">$index</span>: cellIndex,</span><br><span class="line">                      store,</span><br><span class="line">                      <span class="attr">_self</span>: $parent,</span><br><span class="line">                    &#125;)</span><br><span class="line">                  : column.<span class="property">label</span>,</span><br><span class="line">                column.<span class="property">sortable</span> &amp;&amp;</span><br><span class="line">                  <span class="title function_">h</span>(</span><br><span class="line">                    <span class="string">&quot;span&quot;</span>,</span><br><span class="line">                    &#123;</span><br><span class="line">                      <span class="attr">onClick</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span> <span class="title function_">handleSortClick</span>($event, column),</span><br><span class="line">                      <span class="attr">class</span>: <span class="string">&quot;caret-wrapper&quot;</span>,</span><br><span class="line">                    &#125;,</span><br><span class="line">                    [</span><br><span class="line">                      <span class="title function_">h</span>(<span class="string">&quot;i&quot;</span>, &#123;</span><br><span class="line">                        <span class="attr">onClick</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span></span><br><span class="line">                          <span class="title function_">handleSortClick</span>($event, column, <span class="string">&quot;ascending&quot;</span>),</span><br><span class="line">                        <span class="attr">class</span>: <span class="string">&quot;sort-caret ascending&quot;</span>,</span><br><span class="line">                      &#125;),</span><br><span class="line">                      <span class="title function_">h</span>(<span class="string">&quot;i&quot;</span>, &#123;</span><br><span class="line">                        <span class="attr">onClick</span>: <span class="function">(<span class="params">$event</span>) =&gt;</span></span><br><span class="line">                          <span class="title function_">handleSortClick</span>($event, column, <span class="string">&quot;descending&quot;</span>),</span><br><span class="line">                        <span class="attr">class</span>: <span class="string">&quot;sort-caret descending&quot;</span>,</span><br><span class="line">                      &#125;),</span><br><span class="line">                    ]</span><br><span class="line">                  ),</span><br><span class="line">                column.<span class="property">filterable</span> &amp;&amp;</span><br><span class="line">                  <span class="title function_">h</span>(<span class="title class_">FilterPanel</span>, &#123;</span><br><span class="line">                    store,</span><br><span class="line">                    <span class="attr">placement</span>: column.<span class="property">filterPlacement</span> || <span class="string">&quot;bottom-start&quot;</span>,</span><br><span class="line">                    column,</span><br><span class="line">                    <span class="attr">upDataColumn</span>: <span class="function">(<span class="params">key, value</span>) =&gt;</span> &#123;</span><br><span class="line">                      column[key] = value;</span><br><span class="line">                    &#125;,</span><br><span class="line">                  &#125;),</span><br><span class="line">              ]</span><br><span class="line">            ),</span><br><span class="line">          ]</span><br><span class="line">        );</span><br><span class="line">      &#125;)</span><br><span class="line">    )</span><br><span class="line">  )</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<p>table-body 和 table-header 的思路相似，也是利用 tr、td、tbody 这些原生标签实现 dom 的构建</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// tbody的render实现</span></span><br><span class="line"><span class="keyword">return</span> <span class="title function_">h</span>(<span class="string">&quot;tbody&quot;</span>, &#123; <span class="attr">tabIndex</span>: -<span class="number">1</span> &#125;, [</span><br><span class="line">  data.<span class="title function_">reduce</span>(<span class="function">(<span class="params">acc: VNode[], row</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> acc.<span class="title function_">concat</span>(<span class="title function_">wrappedRowRender</span>(row, acc.<span class="property">length</span>));</span><br><span class="line">  &#125;, []),</span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// tfoot标签的render实现</span></span><br><span class="line"><span class="keyword">return</span> <span class="title function_">h</span>(</span><br><span class="line">      <span class="title function_">h</span>(<span class="string">&#x27;tfoot&#x27;</span>, [</span><br><span class="line">        <span class="title function_">h</span>(<span class="string">&#x27;tr&#x27;</span>, &#123;&#125;, [</span><br><span class="line">          ...columns.<span class="title function_">map</span>(<span class="function">(<span class="params">column, cellIndex</span>) =&gt;</span></span><br><span class="line">            <span class="title function_">h</span>(</span><br><span class="line">              <span class="string">&#x27;td&#x27;</span>,</span><br><span class="line">              &#123;</span><br><span class="line">                <span class="attr">key</span>: cellIndex,</span><br><span class="line">                <span class="attr">colspan</span>: column.<span class="property">colSpan</span>,</span><br><span class="line">                <span class="attr">rowspan</span>: column.<span class="property">rowSpan</span>,</span><br><span class="line">                <span class="attr">class</span>: <span class="title function_">getCellClasses</span>(columns, cellIndex),</span><br><span class="line">                <span class="attr">style</span>: <span class="title function_">getCellStyles</span>(column, cellIndex),</span><br><span class="line">              &#125;,</span><br><span class="line">              [</span><br><span class="line">                <span class="title function_">h</span>(</span><br><span class="line">                  <span class="string">&#x27;div&#x27;</span>,</span><br><span class="line">                  &#123;</span><br><span class="line">                    <span class="attr">class</span>: [<span class="string">&#x27;cell&#x27;</span>, column.<span class="property">labelClassName</span>],</span><br><span class="line">                  &#125;,</span><br><span class="line">                  [sums[cellIndex]]</span><br><span class="line">                ),</span><br><span class="line">              ]</span><br><span class="line">            )</span><br><span class="line">          ),</span><br><span class="line">        ]),</span><br><span class="line">      ])</span><br></pre></td></tr></table></figure>
+
+<h1 id="可以借鉴的一些做法"><a href="#可以借鉴的一些做法" class="headerlink" title="可以借鉴的一些做法"></a>可以借鉴的一些做法</h1><ul>
+<li>Style：和样式相关的内容，放在同一个文件内，如 styles-helper.ts，避免样式失效，要注意 style 行内样式顺序，classnames 的合并注意同名 class</li>
+<li>Events：emit 事件放在 events-hepler.ts</li>
+<li>将不同的渲染内容区分开：如 table 的 footer、header、column 等等，都是作为单独 render 的组件聚合到一起</li>
+<li>Provider 和 Inject 的 key 用 symbol 修饰，并且使用常量命名，注意，使用 ts 类型断言的 as const</li>
+<li>是否需要使用 store，看组件的复杂程度，element-UI 中的 Table 和 Form 均使用了 store，store 会增加组件的复杂度，谨慎使用</li>
+<li>Vue3 版本中推荐使用 hooks 抽象逻辑</li>
+<li>单元测试：开发组件一定要加入单元测试，目的是为了发现组件设计的盲点和不合理的地方，甚至是内存管理问题。</li>
+</ul>
+<h1 id="最后，附上-Element-UI-的仓库地址和文档地址"><a href="#最后，附上-Element-UI-的仓库地址和文档地址" class="headerlink" title="最后，附上 Element-UI 的仓库地址和文档地址"></a>最后，附上 Element-UI 的仓库地址和文档地址</h1><p><a class="link"   target="_blank" rel="noopener" href="https://element-plus.org/zh-CN/component/form.html" >Element-UI 文档<i class="fas fa-external-link-alt"></i></a></p>
+<p><a class="link"   target="_blank" rel="noopener" href="https://github.com/element-plus/element-plus/tree/dev/packages" >Element-Git 仓库<i class="fas fa-external-link-alt"></i></a></p>
+
+                </div>
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                            <div class="prev-post">
+                                <a class="prev"
+                                   rel="prev"
+                                   href="/2024/05/22/ReactServerComponent/"
+                                   title="React Server Component"
+                                >
+                                    <span class="left arrow-icon flex-center">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">React Server Component</span>
+                                        <span class="post-nav-item">上一篇</span>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/05/13/%E9%87%8D%E6%96%B0%E5%87%BA%E5%8F%91/"
+                                   title="重新出发——艰难职场之路"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">重新出发——艰难职场之路</span>
+                                        <span class="post-nav-item">下一篇</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="border-box website-info-box default">
+        
+            <div class="copyright-info info-item default">
+                &copy;&nbsp;<span>2020</span>&nbsp;-&nbsp;2024
+                
+                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Lancelote</a>
+                
+            </div>
+
+            <div class="theme-info info-item default">
+                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+            </div>
+
+            
+
+            
+        
+
+        <div class="count-item info-item default">
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="tools-list border-box">
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-toggle-theme-mode flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+<!-- common -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local-search -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>

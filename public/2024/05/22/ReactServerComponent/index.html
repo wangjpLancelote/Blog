@@ -9,7 +9,7 @@
     
     <title>
         
-            DeFi(去中心化金融) |
+            React Server Component |
         
         Lorenzo
     </title>
@@ -169,7 +169,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        DeFi(去中心化金融)
+                        React Server Component
                     </div>
                 
 
@@ -197,12 +197,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-03-26 15:13:35</span>
+                <span class="datetime">2024-05-22 10:48:28</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Thu Mar 28 2024 10:20:00 GMT+0800">2024-03-28 10:20:00</span>
+                <span class="datetime" data-updated="Wed May 22 2024 10:49:58 GMT+0800">2024-05-22 10:49:58</span>
             </span>
         
 
@@ -227,51 +227,71 @@
                 <div class="post-content keep-markdown-body">
                     
 
-                    <h1 id="流动性挖矿"><a href="#流动性挖矿" class="headerlink" title="流动性挖矿"></a>流动性挖矿</h1><p>什么是挖矿？</p>
-<p>最初在区块链中的挖矿是指使用计算机硬件（如 CPU、GPU 或专业的 ASIC 矿机）来执行特定的算法计算，以验证和记录区块链网络中的交易，这个过程对于维护区块链的安全性和去中心化至关重要。</p>
-<p><strong>区块链挖矿</strong>主要包括以下几个方面：</p>
+                    <h2 id="什么是-RSC"><a href="#什么是-RSC" class="headerlink" title="什么是 RSC"></a>什么是 RSC</h2><p>react server component 是 react 推出的服务端组件，顾名思义，服务端组件是运行在服务端的 react 组件，所以要想开发并使用服务端组件，需要先启动一个 node 服务</p>
+<h3 id="RSC-和-SSR-不是一个东西"><a href="#RSC-和-SSR-不是一个东西" class="headerlink" title="RSC 和 SSR 不是一个东西"></a>RSC 和 SSR 不是一个东西</h3><p>服务端组件不能使用客户端的一切变量和方法、事件，因为没有 DOM 和 BOM，所以服务端组件在使用的时候要做融合和水合(Hydrate)</p>
+<p>区分标识：</p>
 <ul>
-<li>交易验证：矿工通过解决复杂的数学问题来验证新生成的交易块，确保交易的有效性。</li>
-<li>工作量证明：常见的挖矿机制，要求矿工完成一项计算工作，这项工作的难度确保了网络的安全性。矿工必须投入大量的计算资源来解决难题，这个过程被称为“挖矿”</li>
-<li>区块创建：一旦矿工解决了难题，他们就可以创建一个新的区块，并将待验证的交易打包进这个区块。</li>
-<li>区块链接：新区块被添加到现有的区块上，形成新的链条，这个过程称为区块链接</li>
-<li>奖励机制：成功挖矿的矿工会获得新生成的加密货币作为奖励，这是对矿工所投入计算资源电力的补偿。</li>
+<li>服务端组件：’use server’</li>
+<li>客户端组件: ‘use client’</li>
 </ul>
-<p>以上是作为 POW（工作量证明的挖矿 Proof of Work）的机制</p>
-<p>除此之外，其他的共识机制如 POS（权益证明 Proof of Stake）和 DPOS（委托权益证明 Delegated Proof of Stake）这些不同的挖矿机制，事实上后两者已经不能算作常规意义的挖矿了，只不过延续之前的叫法仍然叫挖矿，后两者的机制有一个更为适合的名字：质押</p>
-<h1 id="流动性挖矿-1"><a href="#流动性挖矿-1" class="headerlink" title="流动性挖矿"></a>流动性挖矿</h1><p>这是一个去中心化金融中的概念（DeFi），流动性挖矿允许用户通过提供资产到特定的流动性池中来赚取奖励。</p>
+<p>在服务端代码执行开始之前，先执行 React 提供的 register 方法，通过自定义的 NodeJS 的 Module.prototype._compile 方法在 NodeJS 每次 require 文件时检测头部是否有’use client’,有的话就做 client component 相关逻辑的处理</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> register = <span class="built_in">require</span>(<span class="string">&quot;react-server-dom-webpack/node-register&quot;</span>);</span><br><span class="line"><span class="title function_">register</span>();</span><br></pre></td></tr></table></figure>
+
+<p><code>react-server-dom-webpack</code>是 react 针对 RSC 开发的<code>webpack</code>插件</p>
+<h2 id="为什么要有-RSC"><a href="#为什么要有-RSC" class="headerlink" title="为什么要有 RSC"></a>为什么要有 RSC</h2><p>一个 React 组件，可能包含两种类型的状态：</p>
 <ul>
-<li>流动性池：在 DeFi 中，流动性池是由用户共同出资形成的资产池，用于促进加密货币之间的交易。</li>
-<li>提供流动性：用户向这些流动性池中存入自己的加密货币，从而成为流动性提供者(Liquidity Provider 简称 LP)，用户通过池子维持两者货币的交易流动性，并允许其他用户进行交易</li>
-<li>交易费用：当其他用户在流动性中进行交易时，会生成交易费用，这些费用通常按照流动性提供者存入资产的比例分配给他们，作为提供流动性的奖励。</li>
-<li>额外奖励：除了交易费用之外，一些 DeFi 项目还会通过发放自己的治理代币或者奖励代币来激励流动性提供者。这些代币可能具有价值，并且可以用于项目的治理决策或者在未来获得更多收益。</li>
-<li>风险：尽管流动性挖矿提供了赚取额外收益的机会，但是也伴随着风险，例如：如果流动性池中的资产价格发生大幅波动，可能会导致流动性提供者损失资产（无常损失）</li>
+<li>前端交互用的状态，比如加载按钮的显&#x2F;隐状态</li>
+<li>后端请求回的数据，比如下面代码中的 data 状态用于保存后端数据</li>
 </ul>
-<p>流动性挖矿有两种模式：Yield Farming 和 Yield Mining</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">App</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">const</span> [data, update] = <span class="title function_">useState</span>(<span class="literal">null</span>);</span><br><span class="line"></span><br><span class="line">  <span class="title function_">useEffect</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">    <span class="title function_">fetch</span>(url).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>) =&gt;</span> <span class="title function_">update</span>(res.<span class="title function_">json</span>()));</span><br><span class="line">  &#125;, []);</span><br><span class="line">  <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">Button</span> <span class="attr">data</span>=<span class="string">&#123;data&#125;</span> /&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>前端交互状态放在前端最合适，单后端请求返回的数据放在前端则比较繁琐，整个链路如下：</p>
+<ol>
+<li>前端请求并加载 React 业务逻辑代码</li>
+<li>应用执行渲染流程</li>
+<li>App 组件 mount，执行 useEffect，请求后端数据</li>
+<li>后端数据返回，App 组件的子组件消费数据</li>
+</ol>
+<p>那么，我们根据状态类型将组件分类，比如：</p>
 <ul>
-<li><strong>Farming</strong>：将代币组成交易对存入流动性池中，获得份额，称为 LP，交易者使用资金池产生的交易费用会加入资金池，为每个流动性提供者赚取了手续费，根据份额来分配收益</li>
-<li><strong>Mining</strong>：收益来源来自平台提供而不是手续费，例如平台代币的奖励，提供给 LP，作为收益的补充。</li>
+<li>「只包含交互相关状态」的组件，叫做客户端组件(React Client Component) RCC</li>
+<li>「只从数据源获取数据」的组件，叫做服务端组件(React Server Component) RSC</li>
 </ul>
-<h1 id="Stake：质押"><a href="#Stake：质押" class="headerlink" title="Stake：质押"></a>Stake：质押</h1><p>质押指的是存入某种代币 A，随着时间获得新的代币 A 或者另一种代币 B</p>
-<p>和流动性挖矿又一些相同点，都是提供资产来获得收益，这些收益以加密货币的形式发放，两者都是 DeFi 的一部分，</p>
+<p>RSC 的理念就是，一句话概括，根据状态类型，划分组件类型，RCC 在前端运行，RSC 在后端运行</p>
+<h2 id="与-SSR、SSG-的区别"><a href="#与-SSR、SSG-的区别" class="headerlink" title="与 SSR、SSG 的区别"></a>与 SSR、SSG 的区别</h2><p>这两者都是结合了客户端组件和服务端组件的方案，而 RSC 则是其中的组成部分</p>
+<p>SSG 是后端编译时方案，使用 SSG 的业务，后端代码在编译时回生成 HTML，当前端发起请求时，后端始终会返回编译生成的 HTML</p>
+<p>SSR 与 RSC 都是后端运行时方案，也就是说，他们都是前端发起请求后，后端对请求的实时响应，根据请求参数不同，可以作出不同响应。</p>
+<p>同为后端运行时方案，RSC 和 SSR 的区别主要体现在输出产物：</p>
 <ul>
-<li>质押代币需要将代币锁定在钱包或者智能合约中，作为对网络的支持，POS 就是这种方式应用。</li>
-<li>收益来自于网络新新生成的代币和交易费用，质押的收益量按照质押量占总质押量的比例来获得奖励。</li>
-<li>质押会有资产的锁定期限制，锁定期内无法赎回</li>
-<li>质押会影响流动性，除非解锁期结束，否则用户资产一直处于被锁定的状态。</li>
+<li>SSR 的输出产物都是 HTML，浏览器可以解析</li>
+<li>RSC 会流式输出一种「类 JSON」的数据结构（React Flight），由前端的 React 相关插件解析，即上文提到的<code>react-server-dom-webpack</code></li>
 </ul>
-<h1 id="DEX-的收益获取"><a href="#DEX-的收益获取" class="headerlink" title="DEX 的收益获取"></a>DEX 的收益获取</h1><p>DEX（去中心化交易所）是如何获取收益并将奖励给到 LP（Liquidity Prodiver 流动性提供者）的呢</p>
-<p>在流动性提供者（LP）注入资产到流动性池中后，会获得 DEX 的 LP 代币，这些 LP 代币代表了他们在池中的资产份额，当用户在 DEX 上交易的时候，每一笔交易会产生手续费，无论是用 USDT 买 ETH，还是 ETH 换 USDT，这些手续费就会根据分配方式进行分配：</p>
-<ul>
-<li>LP：根据 LP 的份额，给到流动性提供者收益（流动性挖矿的收益人）</li>
-<li>平台收益：用于一部分的平台治理、运营、开发团队的成本</li>
-<li>流动性挖矿的奖励：除了 LP 的份额之外，还会发放额外的奖励，激励用户提供流动性。</li>
-<li>社区基金：DEX 的社区运营治理也需要一些费用</li>
-<li>捐赠：公益项目</li>
+<p>在应用上，需要考虑 SEO 时，SSR 和 SSG 都可以胜任，都是输出 HTML，而 RSC 不行，因为是流式输出</p>
+<h2 id="如何区分-RSC-和-RCC"><a href="#如何区分-RSC-和-RCC" class="headerlink" title="如何区分 RSC 和 RCC"></a>如何区分 RSC 和 RCC</h2><ul>
+<li>带有<code>.server.tsx</code>后缀的文件导出的是 RSC</li>
+<li>带有<code>.client.tsx</code>后缀的文件导出的是 RCC</li>
+<li>没有带以上后缀的文件名是通用组件</li>
 </ul>
-<h1 id="问题："><a href="#问题：" class="headerlink" title="问题："></a>问题：</h1><p>DEX 的费率和 CEX 费率相似甚至偏高，那么用户依然选择 DEX 的原因是什么呢</p>
-<p>DEX 的核心优势就是去中心化，这意味着没有中央机构控制交易过程，降低了单点故障的风险，用户直接在区块链上交易；开放与透明，DEX 的智能合约是开源的；最重要的，DEX 提供了流动性挖矿的机会，用户可以提供流动性来获得额外的代币奖励，这也是 CEX 所没有的。</p>
-<p>DEX 支持更广泛的代币和交易对，对于很多还未上交易所的代币而言，DEX 是早期赚取这些有潜力价值巨大的代币的好机会。</p>
+<h2 id="用法注意"><a href="#用法注意" class="headerlink" title="用法注意"></a>用法注意</h2><p>RCC 不允许 import 导入 RSC 组件，原因很简单，运行环境决定的，客户端组件要在前端运行，服务端组件要在服务端运行</p>
+<p>需要交替使用的话，使用 children，即将 RSC 组件作为 RCC 组件的子组件</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// client.tsx</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">Client</span>(<span class="params">children</span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="language-xml"><span class="tag">&lt;<span class="name">main</span>&gt;</span>&#123;children&#125;<span class="tag">&lt;/<span class="name">main</span>&gt;</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// server.tsx</span></span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Client</span> <span class="keyword">from</span> <span class="string">&quot;./client.tsx&quot;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">Server</span> <span class="keyword">from</span> <span class="string">&quot;./server.tsx&quot;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="keyword">function</span> <span class="title function_">Outer</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="keyword">return</span> (</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">Client</span>&gt;</span></span></span><br><span class="line"><span class="language-xml">      <span class="tag">&lt;<span class="name">Server</span> /&gt;</span></span></span><br><span class="line"><span class="language-xml">    <span class="tag">&lt;/<span class="name">Client</span>&gt;</span></span></span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面说了 RSC 组件是以流的形式传输到前端的，那么这个流的格式是什么样的呢</p>
+<figure class="highlight jsx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">M1</span>:&#123;<span class="string">&quot;id&quot;</span>:<span class="string">&quot;./src/ClientCpn.client.js&quot;</span>,<span class="string">&quot;chunks&quot;</span>:[<span class="string">&quot;client1&quot;</span>],<span class="string">&quot;name&quot;</span>:<span class="string">&quot;&quot;</span>&#125;</span><br><span class="line"><span class="attr">J0</span>:[<span class="string">&quot;$&quot;</span>,<span class="string">&quot;div&quot;</span>,<span class="literal">null</span>,&#123;<span class="string">&quot;className&quot;</span>:<span class="string">&quot;main&quot;</span>,<span class="string">&quot;children&quot;</span>:[<span class="string">&quot;$&quot;</span>,<span class="string">&quot;@1&quot;</span>,<span class="literal">null</span>,&#123;<span class="string">&quot;children&quot;</span>:[<span class="string">&quot;$&quot;</span>,<span class="string">&quot;div&quot;</span>,<span class="literal">null</span>,&#123;<span class="string">&quot;children&quot;</span>:<span class="string">&quot;服务端组件&quot;</span>&#125;]&#125;]&#125;]</span><br></pre></td></tr></table></figure>
+
+<p>RSC 是一种按行分隔的数据结构，方便流式传输，每行的格式为：</p>
+<aside>
+<img src="/icons/code_yellow.svg" alt="/icons/code_yellow.svg" width="40px" /> [标记][id]: JSON数据
+
+</aside>
+
+<p>标记：代表这行的数据类型，比如 J 代表组件树，M 代表「一个 RCC 的引用」，S 代表 Suspense</p>
+<p>id：代表这行数据的 id</p>
+<p>JSON 数据保存了这行具体的数据</p>
+<p>RSC 的序列化和反序列化就是 JSON 的序列化和反序列化，反序列化后的数据再根据「标记」不同做不同处理</p>
+<h2 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h2><p>RSC 数据以什么格式在前后端传递呢，不同于一些 rpc 协议会基于 TCP 或者 UDP 实现，「RSC 协议」基于「HTTP 协议」实现，其中的<code>Content-Type = text/x-component</code></p>
 
                 </div>
                 
@@ -293,14 +313,14 @@
                             <div class="prev-post">
                                 <a class="prev"
                                    rel="prev"
-                                   href="/2024/03/26/token/"
-                                   title="Token(通证)"
+                                   href="/2024/05/22/Contract/"
+                                   title="永续合约"
                                 >
                                     <span class="left arrow-icon flex-center">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">Token(通证)</span>
+                                        <span class="post-nav-title-item text-ellipsis">永续合约</span>
                                         <span class="post-nav-item">上一篇</span>
                                     </span>
                                 </a>
@@ -310,11 +330,11 @@
                             <div class="next-post">
                                 <a class="next"
                                    rel="next"
-                                   href="/2024/03/26/GameFi/"
-                                   title="GameFi(Defi的游戏化)"
+                                   href="/2024/05/19/Element-UI%E7%BB%84%E4%BB%B6%E8%A7%A3%E6%9E%90/"
+                                   title="Element-UI组件解析"
                                 >
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">GameFi(Defi的游戏化)</span>
+                                        <span class="post-nav-title-item text-ellipsis">Element-UI组件解析</span>
                                         <span class="post-nav-item">下一篇</span>
                                     </span>
                                     <span class="right arrow-icon flex-center">
